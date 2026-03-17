@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* NOTE SECTION */
+  h4 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .note img {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .Click button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  /* ABOUT */
+  .About {
+    padding: 20px;
+  }
+
+  .About img {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* FAQ */
+  .faq-content {
+    flex-direction: column;
+  }
+
+  .faq-sidebar {
+    width: 100%;
+    margin: 0;
+  }
+
+  #faq-questions {
+    width: 100%;
+  }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  /* FOOTER (BIG FIX) */
+  .footer {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+   
+  }
+.footer-section ul li a{
+  text-decoration: none;
+}
+}
