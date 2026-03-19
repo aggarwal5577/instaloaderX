@@ -31,11 +31,10 @@ def home():
 #         L.download_post(post, target="downloads")
 
 #         return render_template("index.html",message="✅ Your file is downloaded")
-
-    @app.route('/download', methods=['POST'])
+    
+@app.route('/download', methods=['POST'])
 def download_video():
     file_path = "video.mp4"
-
     return send_file(file_path, as_attachment=True)
 
     except Exception as e:
@@ -44,7 +43,7 @@ def download_video():
 
 
 if __name__ == "__main__":
-    # app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
  app.run(host="0.0.0.0", port=5000, debug=False)
 
 
