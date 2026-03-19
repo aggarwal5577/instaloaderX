@@ -33,7 +33,7 @@ def home():
 #         return render_template("index.html",message="✅ Your file is downloaded")
 
     @app.route('/download', methods=['POST'])
-def download():
+    def download():
     # file download logic
     file_path = "video.mp4"
 
