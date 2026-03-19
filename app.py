@@ -1,5 +1,5 @@
 
-
+import glob
 from flask import Flask, render_template, request
 from flask import send_file
 import instaloader
@@ -32,14 +32,38 @@ def home():
 
 #         return render_template("index.html",message="✅ Your file is downloaded")
     
+# @app.route('/download', methods=['POST'])
+# def download_video():
+#     try:
+#         file_path = "video.mp4"
+#         return send_file(file_path, as_attachment=True)
+#     except Exception as e:
+#         return render_template("index.html", message="❌ Download failed")
+
+
+
+
+
+
 @app.route('/download', methods=['POST'])
 def download_video():
     try:
-        file_path = "video.mp4"
-        return send_file(file_path, as_attachment=True)
-    except Exception as e:
-        return render_template("index.html", message="❌ Download failed")
+        url = request.form["url"]
+        shortcode = url.split("/")[-2]
 
+        post = instaloader.Post.from_shortcode(L.context, shortcode)
+
+        folder = "downloads"
+        L.download_post(post, target=folder)
+
+        # latest downloaded file find karo
+        files = glob.glob(f"{folder}/*")
+        latest_file = max(files, key=os.path.getctime)
+
+        return send_file(latest_file, as_attachment=True)
+
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 
 if __name__ == "__main__":
