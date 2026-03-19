@@ -1,6 +1,7 @@
 
 
 from flask import Flask, render_template, request
+from flask import send_file
 import instaloader
 import os
 
@@ -19,17 +20,24 @@ L = instaloader.Instaloader(
 def home():
     return render_template("index.html")
 
-@app.route("/download", methods=["POST"])
-def download():
-    url = request.form["url"]
+# @app.route("/download", methods=["POST"])
+# def download():
+#     url = request.form["url"]
     
-    try:
-        shortcode = url.split("/")[-2]
-        post = instaloader.Post.from_shortcode(L.context, shortcode)
+#     try:
+#         shortcode = url.split("/")[-2]
+#         post = instaloader.Post.from_shortcode(L.context, shortcode)
 
-        L.download_post(post, target="downloads")
+#         L.download_post(post, target="downloads")
 
-        return render_template("index.html",message="✅ Your file is downloaded")
+#         return render_template("index.html",message="✅ Your file is downloaded")
+
+    @app.route('/download', methods=['POST'])
+def download():
+    # file download logic
+    file_path = "video.mp4"
+
+    return send_file(file_path, as_attachment=True)
 
     except Exception as e:
         return render_template("index.html", message="❌ Download failed")
