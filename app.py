@@ -34,9 +34,9 @@ def home():
     
 @app.route('/download', methods=['POST'])
 def download_video():
-    file_path = "video.mp4"
-    return send_file(file_path, as_attachment=True)
-
+    try:
+        file_path = "video.mp4"
+        return send_file(file_path, as_attachment=True)
     except Exception as e:
         return render_template("index.html", message="❌ Download failed")
 
