@@ -1,0 +1,219 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instaloaderx</title>
+     <link rel="icon" type="image/png" href="/static/downloaderimg.jpg">
+    <link rel="stylesheet" href="/static/style.css">
+     <link rel="stylesheet" href="/static/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="header">
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">StorySaver</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Articles" >  Articles</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="card">
+        <h1>StorySaver</h1>
+        <p>Download Instagram Reels & Stories Instantly</p>
+
+        <form action="/download" method="POST">
+            <input type="text" name="url" placeholder="Paste Instagram URL" required>
+            <button type="submit">Download</button>
+
+          
+        </form>
+
+        
+        <!-- {% if video %}
+            <video controls width="300">
+                <source src="{{ video }}" type="video/mp4">
+            </video>
+            <br>
+            <a href="{{ video }}" download>Download File</a>
+        {% endif %} -->
+{% if message %}
+    <p style="color: green; font-size: 18px; margin-top: 20px; text-align:center;">
+        {{ message }}
+    </p>
+{% endif %}
+        
+    </div>
+    
+     
+</section>
+<div class="note">
+ <h4> Note :- Downloading private Instagram stories without logging in is technically restricted by Instagram to protect user privacy<br>
+            <p>But you can still try this</p></h4>
+            <img src="/static/arrow.png" alt="arrow">
+            <div class="Click">
+                <button type="button" ><a href="https://saveclip.app/en/download-private-instagram">Click Here  </a></button></div>
+</div>
+
+</div>
+
+
+
+<!-- ABOUT SECTION -->
+<section id="About" class="About">
+    <img src="/static/Screenshot_17-3-2026_95936_toolzu.com.jpeg">
+    <h2>About StorySaver</h2>
+
+    <p>
+        StorySaver is a simple and fast tool that allows users to download 
+        Instagram reels and stories instantly. Our goal is to provide an 
+        easy-to-use platform where users can save their favorite content 
+        for offline viewing.
+    </p>
+
+    <p>
+        This platform is built using modern web technologies like HTML, CSS, 
+        and Python Flask. It ensures a smooth and secure experience for users.
+    </p>
+
+    <p>
+        ⚡ Fast downloads <br>
+        🔒 Safe & secure <br>
+        📱 Works on all devices
+    </p>
+</section>
+
+<section id="Articles" class="Articles">
+<div class="faq-container">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-content">
+
+        <!-- Left Sidebar -->
+        <div class="faq-sidebar">
+            <ul>
+                <li><a href="#q1">1.What is Instagram stories download?</a></li>
+                <li><a href="#q2">2.How to download Instagram stories?</a></li>
+                <li><a href="#q3">3.Private accounts?</a></li>
+                <li><a href="#q4">4.How many times can I save?</a></li>
+                <li><a href="#q5">5.Is it legal to save Instagram Stories of other users?</a></li>
+                <li><a href="#q6">6.Is there a limit for the Instagram story download at a time?</a></li>
+                <li><a href="#q7">7. Where can I find all the saved Stories?</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div id="faq-questions">
+<div id="q1">
+                <h3>1. What is Instagram stories download?</h3>
+                <p>Instagram stories download is a service developed for secure and high-quality download of stories.
+                    It is easy-to-use and does not require a sign-up process. Copy, paste, enjoy..</p>
+        </div>
+
+           <div id ="q2" >
+                <h3>2. How to download Instagram stories?</h3>
+                <p>You are just 3 steps away from saving great Instagram stories.<br>
+
+<li>Open Instagram Story Downloader.</li>
+<li>Enter a profiles username in the input line and press Download.</li>
+<li>You will see all the Stories available for these 24 hours. Choose the ones you need and press Download.</li>
+<br>The story will be downloaded quickly to your local storage.
+</p>
+  </div>
+            <div id="q3">
+                <h3>3. Can I download private stories?</h3>
+                <p>No, private accounts are not supported.</p>
+        </div>
+
+          <div id="q4">
+                <h3>4. How many times can I save?</h3>
+                <p>There are no restrictions on how many times you can save content. You can use our Instagram story download service as many times as you want. And it is free..</p>
+</div>
+
+
+              <div id="q5">
+                <h3>5. Is it legal to save Instagram Stories of other users?</h3>
+                <p>Sure. It is legal until you start using it for commercial aim. 
+                    You aren’t allowed to publish it for gaining profit. Then you have to ask for the owner’s permission and tag him or her every time you use this story(s).</p>
+</div>
+         
+
+              <div id="q6">
+                <h3>6. Is there a limit for the Instagram story download at a time?</h3>
+                <p>No, there are no limits. All the Stories will be available for download.</p>
+</div>
+  
+
+              <div id="q7">
+                 <h3>7. Where can I find all the saved Stories?</h3>
+                 <p>You can find all saved videos in the Downloads folder on your PC (Windows, Mac, iOS). 
+                     The same is for phone storages. Plus, saved videos will appear in your Gallery immediately.</p>
+</div>
+</div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- About -->
+    <div id="footer-section">
+      <h2>YourBrand</h2>
+      <p>Download Instagram stories, reels and videos easily with our fast and secure tool.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+   <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">Features</a></li>
+        <li><a href="#faq-questions">FAQ</a></li>
+        <li><a href="#footer-section">Contact</a></li>
+</ul>
+    </div>
+
+    <!-- Contact -->
+    <div id="footer-section">
+      <h3>Contact</h3>
+      <p>Email: kumarsaurabh5577@gmail.com</p>
+      <p>Phone: +91 9557560902</p>
+    </div>
+
+    <!-- Social -->
+    <div id="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/aggarwal___11/"><img src="/static/instagram.png"></a>
+        <a href="https://www.linkedin.com/in/saurabh-aggarwal-8805a3340/"><img src="/static/vecteezy_linkedin-png-icon_16716470.png"></a>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 YourBrand | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+</body>
+</html>
