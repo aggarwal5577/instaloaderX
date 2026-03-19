@@ -1,0 +1,346 @@
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    color: rgb(89, 247, 72);
+    
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      min-height: 90vh;
+    height: auto;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+  
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff416c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+/* ARTICLES */
+.articles {
+    padding: 40px;
+    background: white;
+}
+ img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+
+}
+
+.article-box {
+    margin-bottom: 20px;
+    row-gap: 10px;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+
+
+.About {
+    padding: 60px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.About h2 {
+    margin-bottom: 20px;
+}
+
+.About p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.faq-container {
+     
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sidebar */
+.faq-sidebar {
+    width: 50%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: -40px;
+    font-weight: 500;
+    
+}
+
+
+.faq-sidebar ul {
+    list-style: none;
+    padding: 0;
+   
+}
+
+.faq-sidebar li {
+    margin-bottom: 10px;
+     
+}
+
+.faq-sidebar a {
+    text-decoration: none;
+    color: #989191;
+    font-weight: 500;
+}
+
+.faq-sidebar a:hover {
+    color: #007bff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.q2{
+    margin-top: 45px;
+}
+.q2 li{
+    margin-left: 40px;
+}
+
+.q3{
+    margin-top: 45px;
+    
+}
+.q4{
+    margin-top: 45px;
+}
+.q5{
+    margin-top: 45px;
+}
+.q6{
+    margin-top: 45px;
+}
+.q7{
+    margin-top: 45px;
+}
+p{
+    margin-top: -10px;
+}
+
+
+
+
+
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    margin-left: 0;
+    height: 200px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+ 
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+   
+   
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+     
+    
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+  
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+.social-icons{
+   display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+.social-icons img {
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+   
+   
+  
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+h4{
+    margin-left: 90px;
+    margin-top: -40px;
+}
+.note p{
+    text-align: center;
+    margin-top: 20px;
+}
+.note img{
+    height: 30px;
+    width: 30px;
+    margin-left: 620px;
+    margin-top: -5px;
+}
+.Click a{
+    text-align: center;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+   
+}
+.Click button {
+    background-color: #007bff;
+    margin-left: 560px;
+    width: 160px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.container {
+    width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.footer-section ul li a {
+    color: white !important;
+    text-decoration: none;
+}
